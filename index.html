@@ -35,7 +35,7 @@
         <h3 class="todo-list__title">Todo</h3>
         <ul
           class="todo-list__items"
-          id="incompleteTasks"
+          id="incomplete-task"
         >
           <li class="todo-list__item">
             <input
@@ -47,24 +47,24 @@
               type="text"
               class="todo-list__input"
             >
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <button class="button-edit">Edit</button>
+            <button class="button-delete">
               <img
                 src="./remove.svg"
                 alt="cross icon"
               >
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
+          <li class="edit-mode">
+            <input type="checkbox" >
+            <label class="edit-mode__label">Go Shopping</label>
             <input
               type="text"
+              class="edit-mode__input"
               value="Go Shopping"
-              class="task"
             >
-            <button class="edit">Save</button>
-            <button class="delete">
+            <button class="button-edit">Save</button>
+            <button class="button-delete">
               <img
                 src="./remove.svg"
                 alt="cross icon"
@@ -73,18 +73,21 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
+      <section class="completed-tasks">
+        <h3 class="completed-tasks__title">Completed</h3>
+        <ul
+          id="completed-tasks__items"
+          class="completed-tasks__items"
+        >
+          <li class="completed-tasks__item">
             <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
+            <label class="completed-tasks__label">See the Doctor</label>
             <input
               type="text"
-              class="task"
+              class="completed-tasks__input"
             >
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <button class="button-edit">Edit</button>
+            <button class="button-delete">
               <img
                 src="./remove.svg"
                 alt="cross icon"
