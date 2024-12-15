@@ -1,4 +1,16 @@
-/* Basic Style */
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+li, h3 {
+    list-style: none;
+}
+
+input,button{
+    outline: none;
+}
+
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -16,43 +28,9 @@ body {
     width: 100%;
 }
 
-.header .header__link {
-    font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-    .header {
-        text-align: center;
-    }
-}
-
 .main {
-    display: block;
     width: 500px;
-    margin: 0 auto 0;
-}
-
-.todo-add__input {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
-}
-
-.todo-add__wrapper {
-    display: flex;
-}
-
-ul {
-    margin: 0;
-    padding: 0px;
-}
-
-li, h3 {
-    list-style: none;
-}
-
-input,button{
-    outline: none;
+    margin: 0 auto;
 }
 
 .btn {
@@ -96,11 +74,6 @@ input,button{
     color: #333;
 }
 
-.todo-add__title {
-    display: block;
-    margin: 0 0 20px;
-}
-
 .list-item {
     overflow: hidden;
     padding: 20px 0;
@@ -111,23 +84,14 @@ input,button{
     align-items: center;
 }
 
-.list-item > * {
-    vertical-align: middle;
-}
-
 .list-item > .input_checkbox {
     margin: 0 10px;
 }
 
 .list-item > .label {
-    padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 226px;
-}
-
-.list-item > .input_text {
-    width: 226px;
+    flex-grow: 1;
 }
 
 .btn.btn_delete img {
@@ -135,13 +99,28 @@ input,button{
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .btn.btn_delete img:hover {
     transform: rotateZ(0);
+}
+
+.todo-add__wrapper {
+    display: flex;
+}
+
+.todo-add__title {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.todo-add__input {
+    flex-grow: 1;
 }
 
 #completed-tasks__items .label {
     text-decoration: line-through;
     color: #888;
+    flex-grow: 1;
 }
 
 .list .list-item .input_text {
@@ -150,9 +129,15 @@ input,button{
 
 .list .list-item.list-item_edit .input_text {
     display: inline-block;
-    width: 224px;
+    flex-grow: 1;
 }
 
 .list .list-item.list-item_edit .label {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
 }
