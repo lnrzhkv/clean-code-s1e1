@@ -35,7 +35,7 @@ body {
 .todo-add__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .todo-add__wrapper {
@@ -130,7 +130,7 @@ input, button {
 }
 
 .list-item > .input_text {
-  width: 226px
+  width: 226px;
 }
 
 .btn.btn_delete img {
@@ -145,18 +145,18 @@ input, button {
 
 /* Completed */
 .list#completed-tasks__items .label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .list .list-item .input_text {
-  display: none
+  display: none;
 }
 
 .list .list-item.list-item_edit .input_text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list .list-item.list-item_edit .label {
